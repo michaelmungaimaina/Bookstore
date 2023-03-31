@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ Copyright (c) 2023 Maina Michael. All rights reserved
+  -->
+
+<fx:root type="javafx.scene.control.ListCell"  xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
+   <graphic>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="142.0">
+   <children>
+      <ImageView fx:id="iconView" fitHeight="170.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="2.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="bookLabel" alignment="CENTER" prefHeight="17.0" prefWidth="189.0" text="BOOK TITLE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="authorLabel" alignment="CENTER" layoutX="10.0" layoutY="165.0" prefHeight="17.0" prefWidth="189.0" text="AUTHOR NAME" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="sellButton" mnemonicParsing="false" prefHeight="16.0" prefWidth="60.0" style="-fx-background-color: blue;" text="Sell" />
+   </children>
+</VBox>
+   </graphic>
+</fx:root>

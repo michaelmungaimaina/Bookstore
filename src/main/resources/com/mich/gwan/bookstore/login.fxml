@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mich.gwan.bookstore.controllers.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="164.0" layoutY="7.0" prefHeight="387.0" prefWidth="273.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="191.0" text="WELCOME" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="176.0" prefHeight="12.0" prefWidth="191.0" text="Please login to continue" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="280.0" promptText="User Name" style="-fx-background-color: #f4f4f4;" />
+            <Label minHeight="-Infinity" prefHeight="1.0" prefWidth="280.0" style="-fx-background-color: #d3d3d3;" />
+            <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="36.0" prefWidth="280.0" promptText="Password" style="-fx-background-color: #f4f4f4;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label layoutX="10.0" layoutY="245.0" minHeight="-Infinity" prefHeight="1.0" prefWidth="280.0" style="-fx-background-color: #d3d3d3;" />
+            <Label fx:id="errorLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="280.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="loginButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #d3d3d3;" text="LOGIN">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="12.0" prefWidth="273.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="113.0" text="Don't have Account?" />
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #f4f4f4;" text="Register">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

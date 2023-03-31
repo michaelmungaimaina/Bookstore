@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="484.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mich.gwan.bookstore.controllers.register.RegisterTextBook">
+   <children>
+      <VBox alignment="CENTER" layoutX="114.0" prefHeight="400.0" prefWidth="257.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="157.0" prefWidth="257.0">
+               <children>
+                  <Button fx:id="chooseBookPhotoButton" layoutX="195.0" layoutY="106.0" mnemonicParsing="false" onAction="#chooseUserIcon" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 30px; -fx-border-color: #d3d3d3; -fx-border-radius: 30px;">
+                     <graphic>
+                        <ImageView fx:id="userIconChooser" fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 30px; -fx-background-radius: 30px;">
+                           <image>
+                              <Image url="@icons/open-folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="67.0" layoutY="20.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #f4f4f4; -fx-background-radius: 30px; -fx-border-color: #d3d3d3; -fx-border-radius: 30px;">
+                     <graphic>
+                        <ImageView fx:id="bookImageView" fitHeight="107.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="errorLabel" alignment="CENTER" prefHeight="23.0" prefWidth="256.0" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="bookNameTextfield" prefHeight="33.0" prefWidth="257.0" promptText="Book Name" style="-fx-background-color: #f4f4f4;" />
+            <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="257.0" style="-fx-background-color: grey;" />
+            <TextField fx:id="authorTextField" layoutX="10.0" layoutY="257.0" prefHeight="33.0" prefWidth="257.0" promptText="Author Name" style="-fx-background-color: #f4f4f4;" />
+            <Label layoutX="10.0" layoutY="297.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="257.0" style="-fx-background-color: grey;" />
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="257.0">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #F4F4F4; -fx-border-color: black;" text="CANCEL" />
+                  <Button fx:id="registerButton" layoutX="104.0" layoutY="22.0" mnemonicParsing="false" onAction="#registerNewBook" style="-fx-background-color: #F4F4F4; -fx-border-color: black;" text="ADD">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
